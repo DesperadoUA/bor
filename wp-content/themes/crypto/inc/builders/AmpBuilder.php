@@ -68,7 +68,10 @@ class AmpBuilder implements Builder {
     public function mainBanner():string {
         return "";
     }
-    public function gameInfo():string {
+    public function gameInfo(GameInfoList $list):string {
         return "";
+    }
+    public function asideCasinoLoop(CasinoAsideList $list) {
+        return '';
     }
 }

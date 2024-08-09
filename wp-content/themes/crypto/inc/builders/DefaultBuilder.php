@@ -3,6 +3,7 @@ class DefaultBuilder implements Builder {
     use UI;
     use Game;
     use Header;
+    use Casino;
     private $ampPrefix = PREFIX_AMP;
     private $translate = TRANSLATE;
     private $lang = LANG;
@@ -27,7 +28,194 @@ class DefaultBuilder implements Builder {
         $postType = getPostType($post);
         $fileName = '.js';
         $filePath = TEMPLATE_DIR_URI."/dist/".TEMPLATES_DI_STYLE[$postType][$template].$fileName;
-        return "<script type='text/javascript' src='{$filePath}' ></script>";
+        return "
+        <div class='c-footer w-gap-ftr-alt js-affix-stop'>
+<div class='c-footer__content w-center'>
+<div class='grid'>
+<div class='grid__c-12 grid__c-xmd-9'>
+<ul class='c-footer__menu'>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-fixed/' aria-label='Book of Ra Fixed' title='Book of Ra Fixed'>Book of Ra Fixed</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-um-echtgeld-spielen/' aria-label='Book Of Ra Echtgeld' title='Book Of Ra Echtgeld'>Book Of Ra Echtgeld</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/50-freispiele-ohne-einzahlung/' aria-label='50 Freispiele Ohne Einzahlung' title='50 Freispiele Ohne Einzahlung'>50 Freispiele Ohne Einzahlung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/uber-uns/' aria-label='Über uns' title='Über uns'>Über uns</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-2-gratis-spielen/' aria-label='Book Of Ra 2' title='Book Of Ra 2'>Book Of Ra 2</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/novoline-casino-spiele/' aria-label='Novoline Spiele' title='Novoline Spiele'>Novoline Spiele</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/casino-mit-5-euro-einzahlung/' aria-label='5 Euro Einzahlung' title='5 Euro Einzahlung'>5 Euro Einzahlung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/datenschutzerklaerung/' aria-label='Datenschutzerklärung' title='Datenschutzerklärung'>Datenschutzerklärung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-deluxe/' aria-label='Book of Ra Deluxe' title='Book of Ra Deluxe'>Book of Ra Deluxe</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-dead-kostenlos/' aria-label='Book of Dead' title='Book of Dead'>Book of Dead</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/10-euro-bonus-ohne-einzahlung-casino/' aria-label='10 Euro Bonus ohne Einzahlung' title='10 Euro Bonus ohne Einzahlung'>10 Euro Bonus ohne Einzahlung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/contact-us/' aria-label='Kontaktformular' title='Kontaktformular'>Kontaktformular</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-classic/' aria-label='Book of Ra Classic' title='Book of Ra Classic'>Book of Ra Classic</a>
+ </li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-6/' aria-label='Book of Ra 6' title='Book of Ra 6'>Book of Ra 6</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/casino-20-euro-bonus-ohne-einzahlung/' aria-label='20 Euro Bonus ohne Einzahlung' title='20 Euro Bonus ohne Einzahlung'>20 Euro Bonus ohne Einzahlung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/category/artikel/' aria-label='Artikel und Nachrichten' title='Artikel und Nachrichten'>Artikel und Nachrichten</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-magic-kostenlos-spielen/' aria-label='Book of Ra Magic' title='Book of Ra Magic'>Book of Ra Magic</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-deluxe-6/' aria-label='Book of Ra Deluxe 6' title='Book of Ra Deluxe 6'>Book of Ra Deluxe 6</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/casino-25-euro-bonus-ohne-einzahlung/' aria-label='25 Euro Bonus ohne Einzahlung' title='25 Euro Bonus ohne Einzahlung'>25 Euro Bonus ohne Einzahlung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/verantwortungsvolles-spielen/' aria-label='Verantwortungsvolles Spielen' title='Verantwortungsvolles Spielen'>Verantwortungsvolles Spielen</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/book-of-ra-mobile/' aria-label='Book Of Ra Mobile' title='Book Of Ra Mobile'>Book Of Ra Mobile</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/online-casino-einzahlung-per-telefonrechnung/' aria-label='Casino Einzahlung per Telefonrechnung' title='Casino Einzahlung per Telefonrechnung'>Casino Einzahlung per Telefonrechnung</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/online-casino-echtgeld/' aria-label='Echtgeld Casino' title='Echtgeld Casino'>Echtgeld Casino</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/online-casino-mit-hoher-gewinnchance/' aria-label='Casino mit hoher Gewinnchance' title='Casino mit hoher Gewinnchance'>Casino mit hoher Gewinnchance</a>
+</li>
+<li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/casino-schnelle-auszahlung/' aria-label='Casino schnelle Auszahlung' title='Casino schnelle Auszahlung'>Casino schnelle Auszahlung</a>
+</li>
+ <li class='c-footer__menu-el'>
+<a class='c-footer__link' href='/slots-mit-hoher-auszahlung/' aria-label='Slots mit hoher Auszahlung' title='Slots mit hoher Auszahlung'>Slots mit hoher Auszahlung</a>
+</li>
+</ul>
+</div>
+<div class='grid__c-12 grid__c-xmd-3'>
+<div class='c-footer__bttm-box'>
+<div class='c-footer__nav-box'>
+<div class='c-social '>
+<span class='js-share' style='display:none;' data-id='footer62386246d6e2a' data-link='/stargames-book-of-ra/'></span>
+<div class='c-social__content' id='footer62386246d6e2a'>
+<div class='c-social__title'>Teilen:</div>
+<div class='c-social__btn-box'>
+<div class='c-social__btn-item'>
+<button class='c-social__btn c-social__btn--tw js-share-item' aria-label='Twitter button' data-share='tw'></button>
+</div>
+<div class='c-social__btn-item'>
+<button class='c-social__btn c-social__btn--fb js-share-item' aria-label='Facebook-Button' data-share='fb'></button>
+</div>
+</div>
+</div>
+</div>
+<div class='c-lng'>
+<button class='c-lng__btn' id='drop-lng' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' aria-label='switch language'>
+<picture><source srcset='/wp-content/uploads/2024/07/de.png.webp' type='image/webp'>
+<img src='/wp-content/uploads/2024/07/de.png.webp' alt='de' class=' webpexpress-processed'></picture>
+<span>DE</span>
+</button>
+<div class='c-lng__drop dropdown-menu' aria-labelledby='drop-lng'>
+<ul class='c-lng__drop-list js-scroll-bar mCustomScrollbar _mCS_4 mCS_no_scrollbar'><div id='mCSB_4' class='mCustomScrollBox mCS-light mCSB_vertical mCSB_inside' tabindex='0' style='max-height: 0px;'><div id='mCSB_4_container' class='mCSB_container mCS_y_hidden mCS_no_scrollbar_y' style='position:relative; top:0; left:0;' dir='ltr'>
+<li class='c-lng__drop-el'>
+<a class='c-lng__drop-btn' href='https://book-of-ra-play.com/it/'>
+<picture>
+<source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' 
+data-srcset='https://web.archive.org/web/20220321113221im_//wp-content/webp-express/webp-images/static/img/general/it.png.webp' type='image/webp'><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='/web/20220321113221im_//static/img/general/it.png' type='image/png'><img class='lazyload webpexpress-processed mCS_img_loaded' src='/web/20220321113221im_//static/img/general/lng-cork.png' data-src='/static/img/general/it.png' alt='it'></picture>
+<span>IT</span>
+</a>
+</li>
+<li class='c-lng__drop-el'>
+<a class='c-lng__drop-btn' href='https://bookofra-slot.fr/stargames-book-of-ra/'>
+<picture><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='https://web.archive.org/web/20220321113221im_//wp-content/webp-express/webp-images/static/img/general/fr.png.webp' type='image/webp'><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='/web/20220321113221im_//static/img/general/fr.png' type='image/png'><img class='lazyload webpexpress-processed mCS_img_loaded' src='/web/20220321113221im_//static/img/general/lng-cork.png' data-src='/static/img/general/fr.png' alt='fr'></picture>
+<span>FR</span>
+</a>
+</li>
+<li class='c-lng__drop-el'>
+<a class='c-lng__drop-btn' href='https://bookofra-slot.es/'>
+<picture><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='https://web.archive.org/web/20220321113221im_//wp-content/webp-express/webp-images/static/img/general/es.png.webp' type='image/webp'><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='/web/20220321113221im_//static/img/general/es.png' type='image/png'><img class='lazyload webpexpress-processed mCS_img_loaded' src='/web/20220321113221im_//static/img/general/lng-cork.png' data-src='/static/img/general/es.png' alt='es'></picture>
+ <span>ES</span>
+</a>
+</li>
+<li class='c-lng__drop-el'>
+<a class='c-lng__drop-btn' href='https://book-of-ra-play.com/book-of-ra-stargames/'>
+<picture><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='https://web.archive.org/web/20220321113221im_//wp-content/webp-express/webp-images/static/img/general/en.png.webp' type='image/webp'><source srcset='/web/20220321113221im_//static/img/general/lng-cork.png' data-srcset='/web/20220321113221im_//static/img/general/en.png' type='image/png'><img class='lazyload webpexpress-processed mCS_img_loaded' src='/web/20220321113221im_//static/img/general/lng-cork.png' data-src='/static/img/general/en.png' alt='en'></picture>
+<span>EN</span>
+</a>
+</li>
+</div><div id='mCSB_4_scrollbar_vertical' class='mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical' style='display: none;'><div class='mCSB_draggerContainer'><div id='mCSB_4_dragger_vertical' class='mCSB_dragger' style='position: absolute; min-height: 30px; top: 0px;'><div class='mCSB_dragger_bar' style='line-height: 30px;'></div></div><div class='mCSB_draggerRail'></div></div></div></div></ul>
+</div>
+</div>
+</div>
+<div class='c-footer__protects-box'>
+<a class='c-footer__protects-link' target='_blank' rel='nofollow' 
+href='//web.archive.org/web/20220321113221/https://www.dmca.com/Protection/Status.aspx?ID=690fdb5f-9db1-40ee-9841-da141f2af25d' 
+title='DMCA.com-Schutzstatus' aria-label='DMCA.com-Schutzstatus'>
+<picture>
+<source srcset='/wp-content/uploads/2024/07/dmca.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='121' height='24' src='/wp-content/uploads/2024/07/dmca.png.webp' 
+alt='DMCA.com-Schutzstatus'></picture>
+</a>
+<a class='c-footer__protects-link' href='https://www.egba.eu/' rel='nofollow' 
+aria-label='European Gaming and Betting Association (EGBA)' 
+title='European Gaming and Betting Association (EGBA)'>
+<picture>
+<source srcset='/wp-content/uploads/2024/07/egba.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='144' height='21' src='/wp-content/uploads/2024/07/egba.png.webp' 
+alt='European Gaming and Betting Association (EGBA)'></picture>
+</a>
+<a class='c-footer__protects-link' href='https://about.gambleaware.org/' rel='nofollow' aria-label='GambleAware' title='GambleAware'>
+<picture><source srcset='/wp-content/uploads/2024/07/gamble-aware.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='116' height='28' src='/wp-content/uploads/2024/07/gamble-aware.png.webp' alt='GambleAware'></picture>
+</a>
+<span class='c-footer__protects-link'>
+<span>Hergestellt in</span>
+<picture>
+<source srcset='/wp-content/uploads/2024/07/country.png-1.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='23' height='20' 
+src='/wp-content/uploads/2024/07/country.png-1.webp' alt='Hergestellt in Deutschland' title='Hergestellt in Deutschland'></picture>
+<picture><source srcset='/wp-content/uploads/2024/07/austria.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='23' height='20' src='/wp-content/uploads/2024/07/austria.png.webp'
+ alt='Hergestellt in Österreich' title='Hergestellt in Österreich'></picture>
+</span>
+<a class='c-footer__protects-link' href='https://certify.gpwa.org/verify/bestbettingcasinos.com/' target='_blank' rel='nofollow' alt='gpwa' title='gpwa'>
+<picture><source srcset='/wp-content/uploads/2024/07/gpwa.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='67' height='25' src='/wp-content/uploads/2024/07/gpwa.png.webp' alt='gpwa'></picture>
+</a>
+<span class='c-footer__protects-link'>
+<picture><source srcset='/wp-content/uploads/2024/07/18.png.webp' type='image/webp'>
+<img class='webpexpress-processed lazyloaded' width='32' height='33' src='/wp-content/uploads/2024/07/18.png.webp' alt='18+' title='18+'></picture>
+</span>
+</div>
+</div>
+<p class='c-footer__copy'>Gumpendorfer Str 142 1060, Wien, Österreich © 2022</p>
+</div>
+</div>
+</div>
+</div>
+        <script type='text/javascript' src='{$filePath}' ></script>";
     }
     public function ampAttrHead():string {
         return "";
@@ -88,7 +276,7 @@ class DefaultBuilder implements Builder {
     public function h1($str):string {
         return "<section class='section_heading'>
                    <div class='container'>
-                      <h1>$str</h1>
+                      <h1 class='c-h1'>$str</h1>
                    </div>
                </section>";
     }
@@ -128,7 +316,7 @@ class DefaultBuilder implements Builder {
                         alt='Demo' 
                         title='Demo'>
             </button>
-                <a href='#' data-href='https://book-of-ra-slot.com' 
+                <a href='#' data-href='' 
                     rel='nofollow'
                     class='c-btn c-btn--secondary c-game__btn-money is-hide-to-sm' title='Um Geld spielen'>10 Euro Bonus ohne Einzahlung</a> 
             </div>
@@ -139,7 +327,7 @@ class DefaultBuilder implements Builder {
             </div>
             </div>
                 <a href='#' 
-                    data-href='https://book-of-ra-slot.com' 
+                    data-href='' 
                     rel='nofollow'
                     class='c-btn c-btn--primary c-btn--lg c-game__btn-money-bttm is-hide-from-sm' title='Um Geld spielen'>
                         10 Euro Bonus ohne Einzahlung
@@ -176,7 +364,8 @@ class DefaultBuilder implements Builder {
             </div>
             </div>";
     }
-    public function gameInfo():string {
+    public function gameInfo(GameInfoList $list):string {
+        $listHtml = $this->gameInfoLoop($list);
         return "<div class='w-center'>
         <div class='c-game-info w-gap w-gap--sm-mob'>
             <div class='c-game-info__col c-game-info__col--double'>
@@ -190,695 +379,23 @@ class DefaultBuilder implements Builder {
                         <button class='swiper-button-prev swiper-arrow' aria-label='Previous' type='button' style=''>Previous</button>
                         <button class='swiper-button-next swiper-arrow' aria-label='Next' type='button' style=''>Next</button></div>
                     </div>
-                    <div class='c-game-info__slider c-slider js-game-info-slider game-info-wrapper'>
-                        <div class='swiper-wrapper'>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-coin'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Münzwert pro Dreh</div>
-                                        <p class='c-game-info__text'>18</p>
-                                        <p class='c-game-info__num'>22</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-min-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Mindesteinsatz</div>
-                                        <p class='c-game-info__text'>1 pro Linie</p>
-                                        <p class='c-game-info__num'>23</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Maximaleinsatz</div>
-                                        <p class='c-game-info__text'>200 pro Linie</p>
-                                        <p class='c-game-info__num'>24</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-betting-range'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Wettbereich</div>
-                                        <p class='c-game-info__text'>€ 0.02 - € 5.00</p>
-                                        <p class='c-game-info__num'>25</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-win'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Gewinn</div>
-                                        <p class='c-game-info__text'>x10014.1</p>
-                                        <p class='c-game-info__num'>26</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-software'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Software</div>
-                                        <p class='c-game-info__text'>Novomatic</p>
-                                        <p class='c-game-info__num'>01</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-slot-type'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Slot-Typ</div>
-                                        <p class='c-game-info__text'>Klassischer Slot</p>
-                                        <p class='c-game-info__num'>02</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-year-launched'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Startjahr</div>
-                                        <p class='c-game-info__text'>2009</p>
-                                        <p class='c-game-info__num'>03</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-theme'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Thema</div>
-                                        <p class='c-game-info__text'>Alte Zivilisationen</p>
-                                        <p class='c-game-info__num'>04</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-rtp'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Rtp</div>
-                                        <p class='c-game-info__text'>92%</p>
-                                        <p class='c-game-info__num'>05</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-mobile-friendly'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Handyfreundlich</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>06</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-bonus-game'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Bonusspiel</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>07</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-free-spins'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Freispiele</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>08</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-progressive'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Progressiver Jackpot</div>
-                                        <p class='c-game-info__text'>Nein</p>
-                                        <p class='c-game-info__num'>09</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;' data-slick-index='9' aria-hidden='true' tabindex='-1'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-multiplayer'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Mehrspieler</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>10</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-gamble'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gamble</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>11</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-wild-symbol'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Wild-Symbol</div>
-                                        <p class='c-game-info__text'>Einstellbar</p>
-                                        <p class='c-game-info__num'>12</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide slick-current slick-active' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-scatter-symbol'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Scatter-Symbol</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>13</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide slick-active' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-autoplay'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Autostart-Option</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>14</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide slick-active' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-adjustable'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gewinnlinien Typ</div>
-                                        <p class='c-game-info__text'>Einstellbar</p>
-                                        <p class='c-game-info__num'>15</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide slick-active' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-reels'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Walzen</div>
-                                        <p class='c-game-info__text'>5</p>
-                                        <p class='c-game-info__num'>16</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide slick-active' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-rows'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Reihen</div>
-                                        <p class='c-game-info__text'>3</p>
-                                        <p class='c-game-info__num'>17</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-polylines'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gewinnlinien</div>
-                                        <p class='c-game-info__text'>9</p>
-                                        <p class='c-game-info__num'>18</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-lines-pay'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Linien zahlen</div>
-                                        <p class='c-game-info__text'>links nach rechts</p>
-                                        <p class='c-game-info__num'>19</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                    <div class='c-game-info__icon'>
-                                        <svg>
-                                        <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-both-ways'></use>
-                                        </svg>
-                                    </div>
-                                    <div class='c-game-info__title'>In beide Richtungen</div>
-                                    <p class='c-game-info__text'>Nein</p>
-                                    <p class='c-game-info__num'>20</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide'  style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-min-coin'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Min Münzwert pro Dreh</div>
-                                        <p class='c-game-info__text'>0.02</p>
-                                        <p class='c-game-info__num'>21</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-coin'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Münzwert pro Dreh</div>
-                                        <p class='c-game-info__text'>18</p>
-                                        <p class='c-game-info__num'>22</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-min-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Mindesteinsatz</div>
-                                        <p class='c-game-info__text'>1 pro Linie</p>
-                                        <p class='c-game-info__num'>23</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Maximaleinsatz</div>
-                                        <p class='c-game-info__text'>200 pro Linie</p>
-                                        <p class='c-game-info__num'>24</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-betting-range'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Wettbereich</div>
-                                        <p class='c-game-info__text'>€ 0.02 - € 5.00</p>
-                                        <p class='c-game-info__num'>25</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-win'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Gewinn</div>
-                                        <p class='c-game-info__text'>x10014.1</p>
-                                        <p class='c-game-info__num'>26</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-software'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Software</div>
-                                        <p class='c-game-info__text'>Novomatic</p>
-                                        <p class='c-game-info__num'>01</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-slot-type'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Slot-Typ</div>
-                                        <p class='c-game-info__text'>Klassischer Slot</p>
-                                        <p class='c-game-info__num'>02</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-year-launched'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Startjahr</div>
-                                        <p class='c-game-info__text'>2009</p>
-                                        <p class='c-game-info__num'>03</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-theme'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Thema</div>
-                                        <p class='c-game-info__text'>Alte Zivilisationen</p>
-                                        <p class='c-game-info__num'>04</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-rtp'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Rtp</div>
-                                        <p class='c-game-info__text'>92%</p>
-                                        <p class='c-game-info__num'>05</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-mobile-friendly'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Handyfreundlich</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>06</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-bonus-game'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Bonusspiel</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>07</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-free-spins'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Freispiele</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>08</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-progressive'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Progressiver Jackpot</div>
-                                        <p class='c-game-info__text'>Nein</p>
-                                        <p class='c-game-info__num'>09</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-multiplayer'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Mehrspieler</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>10</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-gamble'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gamble</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>11</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-wild-symbol'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Wild-Symbol</div>
-                                        <p class='c-game-info__text'>Einstellbar</p>
-                                        <p class='c-game-info__num'>12</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-scatter-symbol'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Scatter-Symbol</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>13</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-autoplay'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Autostart-Option</div>
-                                        <p class='c-game-info__text'>Ja</p>
-                                        <p class='c-game-info__num'>14</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-adjustable'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gewinnlinien Typ</div>
-                                        <p class='c-game-info__text'>Einstellbar</p>
-                                        <p class='c-game-info__num'>15</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-reels'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Walzen</div>
-                                        <p class='c-game-info__text'>5</p>
-                                        <p class='c-game-info__num'>16</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-rows'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Reihen</div>
-                                        <p class='c-game-info__text'>3</p>
-                                        <p class='c-game-info__num'>17</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-polylines'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Gewinnlinien</div>
-                                        <p class='c-game-info__text'>9</p>
-                                        <p class='c-game-info__num'>18</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-lines-pay'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Linien zahlen</div>
-                                        <p class='c-game-info__text'>links nach rechts</p>
-                                        <p class='c-game-info__num'>19</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-both-ways'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>In beide Richtungen</div>
-                                        <p class='c-game-info__text'>Nein</p>
-                                        <p class='c-game-info__num'>20</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-min-coin'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Min Münzwert pro Dreh</div>
-                                        <p class='c-game-info__text'>0.02</p>
-                                        <p class='c-game-info__num'>21</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-coin'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Münzwert pro Dreh</div>
-                                        <p class='c-game-info__text'>18</p>
-                                        <p class='c-game-info__num'>22</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-min-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Mindesteinsatz</div>
-                                        <p class='c-game-info__text'>1 pro Linie</p>
-                                        <p class='c-game-info__num'>23</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-bet'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Maximaleinsatz</div>
-                                        <p class='c-game-info__text'>200 pro Linie</p>
-                                        <p class='c-game-info__num'>24</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-betting-range'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Wettbereich</div>
-                                        <p class='c-game-info__text'>€ 0.02 - € 5.00</p>
-                                        <p class='c-game-info__num'>25</p>
-                                    </div>
-                                </div>
-                                <div class='c-game-info__slide swiper-slide ' style='width: 257px;'>
-                                    <div class='c-game-info__item' tabindex='0'>
-                                        <div class='c-game-info__icon'>
-                                            <svg>
-                                            <use xlink:href='/wp-content/themes/crypto/assets/img/sprite.svg#i-max-win'></use>
-                                            </svg>
-                                        </div>
-                                        <div class='c-game-info__title'>Max Gewinn</div>
-                                        <p class='c-game-info__text'>x10014.1</p>
-                                        <p class='c-game-info__num'>26</p>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
+                    {$listHtml}
             </div>
         </div>";
+    }
+    public function asideCasinoLoop(CasinoAsideList $list) {
+        $list = $this->casinoAsideLoop($list);
+        return "<div class='c-columns__col-inner js-affix-box'>
+                    <div class='c-columns__content c-columns__content--author-bttm js-affix-column affix-bottom'>
+                        <div class='c-side-box c-side-box--alt w-no-indent-mob'>
+                            <div class='c-side-box__title'>Top 5 Echtgeld Casinos</div>
+                            <div class='c-side-box__content'>
+                                {$list}
+                                <div class='c-side-box__btn-box'>
+                                    <a class='c-btn c-btn--more c-btn--full' href='/category/casino/' title='Alle Casinos'>Alle Casinos</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>";
     }
 }

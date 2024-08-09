@@ -3,11 +3,20 @@
 <?php 
     include 'components/main_banner/dal.php';
     include 'components/game_info/dal.php';
-    include 'components/h1/dal.php';
 ?>
-<section class="section_padding">
-<?php
-    include 'components/content/dal.php';
-?>
-</section>
+<div class="w-center">
+    <div class="c-columns w-gap">
+        <div class="c-columns__col">
+            <?php
+                include 'components/h1/dal.php';
+                include 'components/content/dal.php';
+            ?>
+        </div>
+        <div class="c-columns__col--side">
+            <?php
+                include 'components/side/dal.php';
+            ?>
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>

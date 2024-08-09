@@ -6,7 +6,8 @@ const OPTIONS_KEYS = [
     'LOGO' => 'logo',
     'FOOTER_TEXT' => 'footer_text',
     'FB' => 'fb',
-    'TW' => 'tw'
+    'TW' => 'tw',
+    'GAME_CHARACTERS' => 'game_characters'
 ];
 const FIELDS_KEY = [
     'META_TITLE' => 'meta_title',
@@ -14,5 +15,6 @@ const FIELDS_KEY = [
     'KEYWORDS' => 'keywords',
     'H1' => 'h1',
     'CONTENT' => 'content',
-    'REF' => 'ref'
+    'REF' => 'ref',
+    'RATING' => 'rating',
 ];

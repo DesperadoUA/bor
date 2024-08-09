@@ -40,3 +40,24 @@ class GameCardTop {
         $this->ecosystem = $ecosystem;
     }
 }
+class GameInfoItem {
+    public $title = '';
+    public $iconId = '';
+    public string $text = '';
+    public string $num = '';
+    function __construct(string $title, string $iconId, string $text, string $num) {
+        $this->title = $title;
+        $this->iconId = $iconId;
+        $this->text = $text;
+        $this->num = $num;
+    }
+}
+class GameInfoList {
+    /**
+     * @var GameInfoItem[]
+     */
+    public $posts = [];
+    function __construct(array $posts) {
+        $this->posts = $posts;
+    }
+}

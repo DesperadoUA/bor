@@ -7,6 +7,9 @@ const TEMPLATES_DI_STYLE = [
     ],
     'POSTS' => [
         'GAME'      => 'gamePost',
+        'BLOG'      => 'blogPost',
+        'CASINO'    => 'casinoPost',
+        'PAYMENT'    => 'paymentPost',
         'DEFAULT'   => 'default'
     ],
     'CATEGORY' => [

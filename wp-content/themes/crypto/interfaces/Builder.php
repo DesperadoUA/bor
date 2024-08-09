@@ -11,5 +11,6 @@ interface Builder {
     public function getTranslate($key);
     public function h1(string $str);
     public function mainBanner();
-    public function gameInfo();
+    public function gameInfo(GameInfoList $list);
+    public function asideCasinoLoop(CasinoAsideList $list);
 }

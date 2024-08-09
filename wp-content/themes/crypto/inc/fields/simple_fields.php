@@ -39,8 +39,16 @@ function input_fields() {
         [
             'container_label' => 'Ref',
             'label' => 'ref link',
-            'post_types' => [GAME_POST_TYPE],
+            'post_types' => [GAME_POST_TYPE, CASINO_POST_TYPE],
             'key' => FIELDS_KEY['REF'],
+            'editor' => 'text',
+            'default' => ''
+        ],
+        [
+            'container_label' => 'Rating',
+            'label' => 'max 50',
+            'post_types' => [CASINO_POST_TYPE],
+            'key' => FIELDS_KEY['RATING'],
             'editor' => 'text',
             'default' => ''
         ],

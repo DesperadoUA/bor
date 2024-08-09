@@ -64,6 +64,15 @@ function getTemplate($post):string {
             case GAME_POST_TYPE:
                 $template = 'GAME';
                 break;
+            case BLOG_POST_TYPE:
+                $template = 'BLOG';
+                break;
+            case CASINO_POST_TYPE:
+                $template = 'CASINO';
+                break;
+            case PAYMENT_POST_TYPE:
+                $template = 'PAYMENT';
+                break;
             default:
                 $template = 'DEFAULT';
         }

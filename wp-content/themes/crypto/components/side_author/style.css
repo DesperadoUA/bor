@@ -1,0 +1,202 @@
+.c-feedback__content {
+    padding: 40px 15px;
+    background: #322c2c;
+    color: #fff
+}
+
+.c-feedback__footer {
+    padding: 35px 15px 40px;
+    background: #201c1c
+}
+
+.c-feedback__ava {
+    max-width: 73px;
+    margin-right: 12px;
+    overflow: hidden;
+    border-radius: 50%
+}
+
+.c-feedback__author {
+    margin: 0
+}
+
+.c-feedback__author-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.c-feedback__author {
+    font-size: 18px;
+    font-weight: 500
+}
+
+.c-feedback__position {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0 0;
+    font-size: 15px;
+    color: #cababa;
+    text-transform: uppercase
+}
+
+.c-feedback__position-icon {
+    position: absolute;
+    top: -4px;
+    right: 0
+}
+
+.c-feedback__position-icon svg {
+    fill: #c4c3c3
+}
+
+.c-feedback__text {
+    margin: 20px 0 0;
+    font-size: 15px;
+    line-height: 1.6
+}
+
+.c-feedback__date-box,.c-feedback__rate-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: 500
+}
+
+.c-feedback__category,.c-feedback__rate-box {
+    margin-top: 20px
+}
+
+.c-feedback__footer {
+    font-size: 15px
+}
+
+.c-feedback__link {
+    color: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.c-feedback__link:active,.c-feedback__link:focus,.c-feedback__link:hover {
+    color: #709fff;
+    text-decoration: none
+}
+
+.c-feedback__like-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.c-feedback__like-box .c-btn-like {
+    margin: -1px 0 0 10px
+}
+
+.c-feedback__category span {
+    font-weight: 500
+}
+.c-feedback__content {
+    position: relative;
+}
+.c-feedback__text-box {
+    margin-top: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width:1365px) {
+    .c-feedback__text-box {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%
+    }
+
+    .c-feedback__ava {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px;
+        max-width: 50px
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .c-feedback {
+        width: calc(100%);
+        padding-top: 150px
+    }
+
+    .c-feedback.is-static-pos {
+        position: relative!important;
+        top: auto!important;
+        bottom: auto!important;
+        width: 100%;
+        margin-top: 30px
+    }
+
+    .c-feedback__inner {
+        -webkit-box-shadow: 5.248px 6.038px 24px 0 rgba(0,0,0,.4);
+        box-shadow: 5.248px 6.038px 24px 0 rgba(0,0,0,.4)
+    }
+
+    .c-feedback__content {
+        padding: 80px 25px 35px;
+        border-radius: 5px 5px 0 0;
+        text-align: center
+    }
+
+    .c-feedback__footer {
+        padding: 25px 25px 35px;
+        border-radius: 0 0 5px 5px
+    }
+
+    .c-feedback__author-box {
+        display: block
+    }
+
+    .c-feedback__author {
+        font-size: 20px
+    }
+
+    .c-feedback__ava {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        max-width: 183px;
+        margin: 0;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .c-feedback__category,.c-feedback__text {
+        display: -webkit-box;
+        overflow: hidden;
+        font-size: 15px;
+        -webkit-box-orient: vertical
+    }
+
+    .c-feedback__text {
+        margin-top: 16px;
+        max-height: 168px;
+        line-height: 24px;
+        -webkit-line-clamp: 7
+    }
+
+    .c-feedback__category {
+        max-height: 44px;
+        line-height: 22px;
+        -webkit-line-clamp: 2
+    }
+}

@@ -10,7 +10,7 @@ foreach($files as $file) {
     if(is_dir($path) and isDirLoad($file)) autoloadFilesInDirectory($path.'/');
 }
 const ROOT_DIR = __DIR__;
-define('ALL_POST_TYPES', array_merge(['posts', 'page'], [GAME_POST_TYPE, CASINO_POST_TYPE]));
+define('ALL_POST_TYPES', array_merge(['posts', 'page'], [GAME_POST_TYPE, CASINO_POST_TYPE, BLOG_POST_TYPE, PAYMENT_POST_TYPE]));
 const ALL_TAXONOMIES = [];
 define('HOST_URL', get_site_url( null, '', 'https' ));
 const DEFAULT_IMG = HOST_URL.'/wp-content/themes/crypto/assets/img/default.jpg';
